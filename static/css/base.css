@@ -1,3 +1,5 @@
+/* General Styling */
+
 html {
     height: 100%;
 }
@@ -7,15 +9,16 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Montserrat';
 }
 
 #main-heading {
-    font-family: 'Sonsie One';
+    font-family: 'Racing Sans One';
+    font-size: 250%;
 }
 
 .shop-now {
-    margin-top: 610px;
+    margin-top: 650px;
 }
 
 .shop-now-button {
@@ -31,6 +34,10 @@ body {
 .h1-large {
     font-size: 310%;
     font-weight: 1000;
+}
+
+#delivery-banner {
+    font-size: 80%;
 }
 
 /* from Bulma */
@@ -77,6 +84,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 /* -------------------------------- Media Queries */

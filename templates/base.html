@@ -19,7 +19,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Sonsie+One&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -114,6 +119,34 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/main-nav.html' %}
+                {% include 'includes/mobile-top-header.html' %}
+            </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center h-100">
+            <div class="col bg-black text-white">
+                <p class="logo-font my-1"><strong id="strong">Students get 15% off</strong>
+                    <br>
+                    with unidays</p>
+            </div>
+            <div class="col bg-black text-white">
+                <p class="logo-font my-1"><strong id="strong">Free uk next day delivery</strong>
+                    <br>
+                    on orders £80+</p>
+            </div>
+            <div class="col bg-black text-white">
+                <p class="logo-font my-1"><strong id="strong">Free uk standard delivery</strong>
+                    <br>
+                    on orders £40+</p>
+            </div>
+        </div>
         </div>
     </header>
 
