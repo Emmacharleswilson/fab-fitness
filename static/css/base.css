@@ -12,22 +12,26 @@ body {
     font-family: 'Montserrat';
 }
 
+header {
+    background: #fff8f8;
+}
+
 #main-heading {
     font-family: 'Racing Sans One';
     font-size: 250%;
 }
 
 .shop-now {
-    margin-top: 650px;
+    margin-top: 700px;
 }
 
 .shop-now-button {
-    margin-top: 40px;
+    margin-top: 100px;
     background: #FD5075 !important;
 }
 
 .shop-now-button:hover {
-    background: black !important;
+    background: #424242 !important;
 }
 
 
@@ -37,6 +41,14 @@ body {
 }
 
 #delivery-banner {
+    font-size: 80%;
+}
+
+#main-nav {
+    font-size: 90%;
+}
+
+.dropdown-item {
     font-size: 80%;
 }
 
