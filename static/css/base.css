@@ -19,11 +19,11 @@ header {
 #main-heading {
     font-family: 'Racing Sans One';
     font-size: 250%;
+    color: #FD5075;
 }
 
 .shop-now-button {
-    margin-top: 200px;
-    margin-left: -40px;
+    margin-top: 180px;
     background: #FD5075 !important;
 }
 
@@ -41,8 +41,8 @@ header {
     font-size: 80%;
 }
 
-#main-nav {
-    font-size: 90%;
+.main-nav {
+    font-size: 10% !important;
 }
 
 .dropdown-item {
@@ -56,7 +56,7 @@ header {
 }
 
 #banner {
-    margin-top: 800px;
+    margin-top: 780px;
     background: black;
     width: 100%;
     height: 700px !important;
@@ -71,42 +71,38 @@ header {
     color: #fff8f8;
 }
 
-footer {
-    padding-top: 10px;
-    margin-top: 46px;
-    height: 150px;
-    background-color: #424242;
-}
-
 .hp-images {
     margin-top: 900px;
     height: 30%;
 }
 
 .girls {
-    height: 40% !important;
+    height: 100% !important;
+}
+
+.contain {
+    height: 400px !important;
 }
 
 .row {
     margin-left: 1px !important;
     margin-right: 1px !important;
+    text-align: center;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     border: none;
+    margin-top: -8px;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -116,7 +112,6 @@ footer {
     z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -124,19 +119,41 @@ footer {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #e2e2e2;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: white;
+}
+
+/* Social media links and footer */
+
+.fab {
+    height: 50px !important;
+    color: aliceblue !important;
+}
+
+.social-link {
+    font-size: 200%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: -20px;
+}
+
+.copyright-text {
+    color: #FD5075;
+}
+
+footer {
+    padding-top: 10px;
+    margin-top: 28px;
+    height: 180px;
+    background-color: #424242;
 }
 
 /* from Bulma */
