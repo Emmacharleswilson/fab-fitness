@@ -23,6 +23,8 @@ header {
 }
 
 .shop-now-button {
+    min-width: 190px !important;
+    height: 65px;
     margin-top: 180px;
     background: #FD5075 !important;
 }
@@ -85,9 +87,33 @@ header {
 }
 
 .row {
-    margin-left: 1px !important;
-    margin-right: 1px !important;
     text-align: center;
+}
+
+.navbar-nav {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.list-inline-item {
+    margin-top: 10px;
+    height: 70%;
+}
+
+.font-weight-bold {
+    font-weight: 400 !important;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #FD5075 !important;
+}
+
+.dropdown-content a:hover {
+    color: #FD5075;
 }
 
 /* Dropdown Button */
@@ -135,7 +161,7 @@ header {
 
 .fab {
     height: 50px !important;
-    color: aliceblue !important;
+    color: #fff8f8 !important;
 }
 
 .social-link {
