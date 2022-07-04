@@ -1,0 +1,601 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "Strength",
+            "description": "Plunge Neckline Sports Bra in Black",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-1.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": "Strength",
+            "description": "Plunge Neckline Sports Bra in Pink",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-2.png"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001730010",
+            "name": "Strength",
+            "description": "Plunge Neckline Sports Bra in Orange",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-3.png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001890157",
+            "name": "Be The Best",
+            "description": "V Neck Sports Bra in Blue",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-4.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002111605",
+            "name": "Circuit",
+            "description": "Seamless Sports Bra in Confidence Blue",
+            "price": 24.99,
+            "category": 1,
+            "image": "sb-5.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002260206",
+            "name": "Be The Best",
+            "description": "V Neck Sports Bra in Hot Pink",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-6.png"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002440521",
+            "name": "Circuit",
+            "description": "Seamless Sports Bra in Confidence Grey",
+            "price": 24.99,
+            "category": 1,
+            "image": "sb-7.png"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002601115",
+            "name": "Be The Best",
+            "description": "V Neck Sports Bra in Purple",
+            "price": 22.99,
+            "category": 1,
+            "image": "sb-8.png"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002690715",
+            "name": "High Energy",
+            "description": "Short Sleeve Crop Top in Green",
+            "price": 24.99,
+            "category": 2,
+            "image": "ct-1.png"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002701115",
+            "name": "High Energy",
+            "description": "Short Sleeve Crop Top in Purple",
+            "price": 24.99,
+            "category": 2,
+            "image": "ct-2.png"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002761055",
+            "name": "Chase",
+            "description": "Short Sleeve Zip Crop Top in Violet",
+            "price": 27.99,
+            "category": 2,
+            "image": "ct-3.png"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820069",
+            "name": "Instinct",
+            "description": "Zebra Seamless Short Sleeve Crop Top in Sage",
+            "price": 26.99,
+            "category": 2,
+            "image": "ct-4.png"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820147",
+            "name": "Incline",
+            "description": "Racer Crop Top in Power Rose",
+            "price": 24.99,
+            "category": 2,
+            "image": "ct-5.png"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002910572",
+            "name": "Incline",
+            "description": "Racer Crop Top in Focus Peach",
+            "price": 24.99,
+            "category": 2,
+            "image": "ct-6.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002990740",
+            "name": "Chase",
+            "description": "Short Sleeve Zip Crop Top in Teal",
+            "price": 27.99,
+            "category": 2,
+            "image": "ct-7.png"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003050248",
+            "name": "Instinct",
+            "description": "Zebra Seamless Short Sleeve Crop Top - Black",
+            "price": 27.99,
+            "category": 2,
+            "image": "ct-8.png"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003070787",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Teal",
+            "price": 29.99,
+            "category": 3,
+            "image": "ls-1.png"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003090182",
+            "name": "Reach For It",
+            "description": "Long Sleeve Crop Top in Pink",
+            "price": 24.99,
+            "category": 3,
+            "image": "ls-2.png"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003090186",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Pink",
+            "price": 29.99,
+            "category": 3,
+            "image": "ls-3.png"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003161326",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Dark Pink",
+            "price": 29.99,
+            "category": 3,
+            "image": "ls-4.png"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003230723",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Violet",
+            "price": 29.99,
+            "category": 3,
+            "image": "ls-5.png"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003270936",
+            "name": "All The Way",
+            "description": "Long Sleeve Zip Crop Top in Purple",
+            "price": 24.99,
+            "category": 3,
+            "image": "ls-6.png"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003360384",
+            "name": "Reach For It",
+            "description": "Long Sleeve Crop Top in Dark Pink",
+            "price": 24.99,
+            "category": 3,
+            "image": "ls-7.png"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003440111",
+            "name": "Reach For It",
+            "description": "Long Sleeve Crop Top in Purple",
+            "price": 24.99,
+            "category": 3,
+            "image": "ls-8.png"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003540313",
+            "name": "Superset",
+            "description": "Full Length Leggings in Power Rose",
+            "price": 34.99,
+            "category": 4,
+            "image": "l-1.png"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003560513",
+            "name": "Back In Gear",
+            "description": "High Waist Leggings in Purple",
+            "price": 29.99,
+            "category": 4,
+            "image": "l-2.png"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003560948",
+            "name": "Back In Gear",
+            "description": "High Waist Leggings in Hot Pink",
+            "price": 29.99,
+            "category": 4,
+            "image": "l-3.png"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003570628",
+            "name": "Back In Gear",
+            "description": "High Waist Leggings in Green",
+            "price": 29.99,
+            "category": 4,
+            "image": "l-4.png"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003620308",
+            "name": "Energy",
+            "description": "Full Length Seamless Leggings in Orange",
+            "price": 34.99,
+            "category": 4,
+            "image": "l-5.png"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003690115",
+            "name": "Energy",
+            "description": "Full Length Seamless Leggings in Black",
+            "price": 34.99,
+            "category": 4,
+            "image": "l-6.png"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003690116",
+            "name": "Superset",
+            "description": "Full Length Leggings in Confidence Blue",
+            "price": 34.99,
+            "category": 4,
+            "image": "l-7.png"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003780391",
+            "name": "Superset",
+            "description": "Full Length Leggings in Power Rose",
+            "price": 34.99,
+            "category": 4,
+            "image": "l-8.png"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003790542",
+            "name": "Speed",
+            "description": "High Waist Seamless Biker Shorts in Orange",
+            "price": 25.99,
+            "category": 5,
+            "image": "s-1.png"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003831225",
+            "name": "Change The Game",
+            "description": "Seamless High Waist Biker Shorts in Confidence Blue",
+            "price": 27.99,
+            "category": 5,
+            "image": "s-2.png"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003861402",
+            "name": "Run For It",
+            "description": "High Waist Mini Shorts in Purple",
+            "price": 23.99,
+            "category": 5,
+            "image": "s-3.png"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003910638",
+            "name": "Run For It",
+            "description": "High Waist Mini Shorts in Hot Pink",
+            "price": 23.99,
+            "category": 5,
+            "image": "s-4.png"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003950574",
+            "name": "Invigorate",
+            "description": "Seamless High Waist Mini Shorts in Grey",
+            "price": 25.99,
+            "category": 5,
+            "image": "s-5.png"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003950576",
+            "name": "Invigorate",
+            "description": "Seamless High Waist Mini Shorts in Beige",
+            "price": 25.99,
+            "category": 5,
+            "image": "s-6.png"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960062",
+            "name": "Speed",
+            "description": "High Waist Seamless Biker Shorts in Pink",
+            "price": 25.99,
+            "category": 5,
+            "image": "s-7.png"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960682",
+            "name": "Speed",
+            "description": "High Waist Seamless Biker Shorts in Black",
+            "price": 25.99,
+            "category": 5,
+            "image": "s-8.png"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960775",
+            "name": "Run For It",
+            "description": "High Waist Mini Shorts in Purple",
+            "price": 23.99,
+            "category": 6,
+            "image": "s-3.png"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003990736",
+            "name": "Speed",
+            "description": "High Waist Seamless Biker Shorts in Black",
+            "price": 25.99,
+            "category": 6,
+            "image": "s-8.png"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003990746",
+            "name": "Run For It",
+            "description": "High Waist Mini Shorts in Hot Pink",
+            "price": 23.99,
+            "category": 6,
+            "image": "s-4.png"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004111503",
+            "name": "All The Way",
+            "description": "Long Sleeve Zip Crop Top in Purple",
+            "price": 24.99,
+            "category": 6,
+            "image": "ls-6.png"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004230059",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Teal",
+            "price": 29.99,
+            "category": 6,
+            "image": "ls-1.png"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004310089",
+            "name": "Reach For It",
+            "description": "Long Sleeve Crop Top in Purple",
+            "price": 24.99,
+            "category": 7,
+            "image": "ls-8.png"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004610254",
+            "name": "Agile",
+            "description": "Long Sleeve High Neck Zip Crop Top in Dark Pink",
+            "price": 29.99,
+            "category": 7,
+            "image": "ls-4.png"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004650050",
+            "name": "Reach For It",
+            "description": "Long Sleeve Crop Top in Pink",
+            "price": 24.99,
+            "category": 7,
+            "image": "ls-2.png"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004821375",
+            "name": "Incline",
+            "description": "Racer Crop Top in Power Rose",
+            "price": 24.99,
+            "category": 7,
+            "image": "ct-5.png"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004900522",
+            "name": "Strength",
+            "description": "Plunge Neckline Sports Bra in Pink",
+            "price": 22.99,
+            "category": 7,
+            "image": "sb-2.png"
+        }
+    }
+]

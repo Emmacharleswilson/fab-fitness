@@ -1,0 +1,57 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "sports_bras",
+            "friendly_name": "Sports Bras"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "crop_tops",
+            "friendly_name": "Crop Tops"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "long_sleeve",
+            "friendly_name": "Long Sleeve"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "leggings",
+            "friendly_name": "Leggings"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "shorts",
+            "friendly_name": "Shorts"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
+        }
+    }
+]
