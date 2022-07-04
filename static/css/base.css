@@ -243,8 +243,20 @@ footer {
 }
 
 .logo-font-heading {
-    margin-top: 60px;
+    margin-top: 90px;
+    margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.img-fluid-page {
+    margin-top: 40px;
+    height: 70%;
+    width: 70%;
+}
+
+.product-details-container {
+    margin-top: 150px !important;
+    text-align: left;
 }
 
 /* -------------------------------- Media Queries */
@@ -272,5 +284,16 @@ footer {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
