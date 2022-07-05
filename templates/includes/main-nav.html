@@ -9,7 +9,8 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Clothes</a>
+                <a href="{% url 'products' %}?category=sports_bras,crop_tops,long_sleeve,leggings,shorts"
+                    class="dropdown-item">All Clothes</a>
             </div>
         </li>
 
