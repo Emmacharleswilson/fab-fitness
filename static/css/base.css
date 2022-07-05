@@ -243,10 +243,12 @@ footer {
 }
 
 .logo-font-heading {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
+/* Products page */
 
 .img-fluid-page {
     margin-top: 40px;
@@ -257,6 +259,50 @@ footer {
 .product-details-container {
     margin-top: 150px !important;
     text-align: left;
+}
+
+.pb-0 {
+    font-size: 110%;
+    color: #000;
+    font-weight: 600;
+}
+
+.mb-0-n {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mb-0-d {
+    margin-top: -30px;
+    font-size: 85%;
+}
+
+.font-weight-bold {
+    font-size: 85%;
+    font-weight: 700 !important;
+    margin-top: -30px;
+    color: #000;
+}
+
+/* Product detail page */
+
+.mb-0-pd {
+    font-size: 130%;
+    font-weight: 800;
+    margin-top: -50px;
+    text-transform: uppercase !important;
+}
+
+.mb-0-p {
+    font-size: 95%;
+    font-weight: 300;
+    color: #020202;
+    margin-top: 15px;
+}
+
+.mt-3-pd {
+    color: #020202;
 }
 
 /* -------------------------------- Media Queries */
