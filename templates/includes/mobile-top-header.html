@@ -8,9 +8,10 @@
             </div>
         </a>
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-            <form class="form" method="GET" action="{#}">
+            <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-4" type="text" name="q" placeholder="Search our site">
+                    <input class="form-control border border-black rounded-4" type="text" name="q"
+                        placeholder="Search our site">
                     <div class="input-group-append">
                         <button class="form-control btn btn-black border border-black rounded-4" type="submit">
                             <span class="icon">
@@ -34,13 +35,13 @@
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="#" class="dropdown-item font-weight-bold">Product Management</a>
-                {% endif %}
-                <a href="#" class="dropdown-item">My Profile</a>
-                <a href="#" class="dropdown-item font-weight-bold">Logout</a>
-                {% else %}
-                <a href="#" class="dropdown-item font-weight-bold">Register</a>
-                <a href="#" class="dropdown-item font-weight-bold">Login</a>
-                {% endif %}
+            {% endif %}
+            <a href="#" class="dropdown-item">My Profile</a>
+            <a href="#" class="dropdown-item font-weight-bold">Logout</a>
+            {% else %}
+            <a href="#" class="dropdown-item font-weight-bold">Register</a>
+            <a href="#" class="dropdown-item font-weight-bold">Login</a>
+            {% endif %}
         </div>
     </li>
     <!-- Wishlist Icon -->
