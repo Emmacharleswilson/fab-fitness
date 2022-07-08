@@ -212,7 +212,38 @@ footer {
     min-width: 260px;
 }
 
+.btn-outline-black {
+    background: white;
+    color: #000 !important;
+    border: 1px solid black !important;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .btn-black {
+    background: #000;
+    color: white;
+}
+
+.btn-pink {
+    background: #424242;
+    color: white;
+    border: #000;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #000000;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    height: 40px;
+}
+
+.btn-pink:hover {
     background: black;
     color: white;
 }
@@ -346,6 +377,32 @@ a.category-badge>span.badge:hover {
 
 .mt-3-pd {
     color: #020202;
+}
+
+.btn,
+.btn-group {
+    display: block !important;
+}
+
+.btn-ks {
+    margin-top: 20px !important;
+    background: white;
+    color: black;
+    border: #000;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #000000;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #000000;
+}
+
+.slide_right_s:hover {
+    box-shadow: inset 400px 0 0 0 #FD5075;
 }
 
 /* -------------------------------- Media Queries */
