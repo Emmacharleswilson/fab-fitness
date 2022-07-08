@@ -88,6 +88,8 @@ header {
 
 .row {
     text-align: center;
+    margin-left: -0.1px !important;
+    margin-right: -0.1px !important;
 }
 
 .navbar-nav {
@@ -114,6 +116,11 @@ header {
 
 .dropdown-content a:hover {
     color: #FD5075;
+}
+
+.container-fluid {
+    padding-right: 0.1px !important;
+    padding-left: 0.1px !important;
 }
 
 /* Dropdown Button */
