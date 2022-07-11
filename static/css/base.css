@@ -407,6 +407,15 @@ a.category-badge>span.badge:hover {
     box-shadow: inset 400px 0 0 0 #FD5075;
 }
 
+a.text-info:focus,
+a.text-info:hover {
+    color: #FD5075 !important;
+}
+
+.text-info {
+    color: #000 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
