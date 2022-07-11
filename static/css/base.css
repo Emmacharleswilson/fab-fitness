@@ -25,6 +25,8 @@ header {
 .shop-now-button {
     min-width: 190px !important;
     height: 65px;
+    max-width: 50px !important;
+    justify-content: center;
     margin-top: 180px;
     background: #FD5075 !important;
 }
@@ -314,9 +316,7 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
-.w-50 {
-    width: 40% !important;
-}
+
 
 .fa-arrow-up {
     font-size: 25px;
@@ -379,7 +379,7 @@ a.category-badge>span.badge:hover {
     color: #020202;
 }
 
-.btn,
+.btn-s,
 .btn-group {
     display: block !important;
 }
@@ -395,6 +395,8 @@ a.category-badge>span.badge:hover {
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    height: 40px;
+    text-align: center;
 }
 
 .slide_right:hover {
