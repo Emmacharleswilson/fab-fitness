@@ -89,9 +89,12 @@ header {
 }
 
 .row {
-    text-align: center;
     margin-left: -0.1px !important;
     margin-right: -0.1px !important;
+}
+
+.row-cols-4 {
+    text-align: center;
 }
 
 .navbar-nav {
@@ -300,6 +303,7 @@ a.category-badge>span.badge:hover {
     margin-top: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .btt-button {
@@ -312,7 +316,9 @@ a.category-badge>span.badge:hover {
     background-color: #c4c4c4;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
