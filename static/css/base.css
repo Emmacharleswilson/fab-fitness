@@ -128,6 +128,23 @@ header {
     padding-left: 0.1px !important;
 }
 
+/* bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     padding: 10px;
