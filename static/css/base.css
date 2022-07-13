@@ -196,6 +196,10 @@ header {
     overflow-y: auto;
 }
 
+.bg-warning {
+    background-color: #FD5075 !important;
+}
+
 /* Dropdown Button */
 .dropbtn {
     padding: 10px;
