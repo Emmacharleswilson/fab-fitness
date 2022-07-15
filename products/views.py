@@ -34,7 +34,7 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = Category.objects.filter(name__in=categories).all()
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -51,6 +51,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'page_heading': categories[0].friendly_name if categories and len(categories) == 1 else 'Clothes'
     }
 
     return render(request, 'products/products.html', context)

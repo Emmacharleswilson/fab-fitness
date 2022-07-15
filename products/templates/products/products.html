@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font-heading">Clothes</h2>
+            <h2 class="logo-font-heading">{{ page_heading }}</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-5 border">{{ c.friendly_name }}</span>
@@ -145,7 +145,8 @@
 
         var selectedVal = selector.val();
         if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[1];
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
 
             currentUrl.searchParams.set("sort", sort);
             currentUrl.searchParams.set("direction", direction);
