@@ -578,6 +578,10 @@ a.text-info:hover {
     border-radius: 0;
 }
 
+.btn-checkout {
+    justify-content: center;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
