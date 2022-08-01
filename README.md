@@ -134,15 +134,8 @@ Home Page:
 Products Page:
 ![Products Page Wireframe](media/readme/products.png)
 
-- The shopping bag page has its layout changed mainly on mobile, whereas on desktop everything is more condensed so as not to take up the full width of the browser.
-- On smaller resolutions fitting everything within a 320px resolution became incredibly problematic. Everything felt squashed and condensed.
-- To remedy the smaller resolutions, items within the bag now show u vertically, with the image first, name, price, quantity input, and total for the product in that order. This change was well received from the feedback I got, and all in all, provides a better user experience.
-
 Product Details Page:
 ![Product Details Wireframe](media/readme/product-detail.png)
-
-- I changed the number of products being shown horizontally from 4 to 3. This change was the leverage of how good I felt the product images were.
-- I removed the details and add to bag buttons, the image now acts as a link to the products details page.
 
 Shopping Bag Page:
 ![Shopping Bag Wireframe](media/readme/shopping-bag.png)
@@ -150,7 +143,6 @@ Shopping Bag Page:
 Checkout Page:
 ![Checkout Page Wireframe](media/readme/checkout.png)
 
-- Small change on this page was to move the product description to below the product. I felt as though the amount of information on the right side of the page was causing a bad user experience. Moving the description below also allowed me to increase the font size to make it easier to read.
 
 [Account Page Wireframes](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/wireframes/account-page-wireframes.pdf)
 

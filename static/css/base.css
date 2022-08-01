@@ -433,7 +433,6 @@ a.category-badge>span.badge:hover {
 .font-weight-bold {
     font-size: 85%;
     font-weight: 700 !important;
-    color: #000;
 }
 
 /* Product detail page */
@@ -580,6 +579,20 @@ a.text-info:hover {
 
 .btn-checkout {
     justify-content: center;
+}
+
+.wishlist {
+    color: #FD5075;
+    text-decoration: none;
+    margin-top: 6px !important;
+}
+
+.ks {
+    margin-left: -15px;
+}
+
+.ks-ab {
+    margin-top: -10px !important;
 }
 
 /* -------------------------------- Media Queries */
