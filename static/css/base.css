@@ -595,6 +595,20 @@ a.text-info:hover {
     margin-top: -10px !important;
 }
 
+.sr {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+#reviews {
+    margin-left: -50pxpx !important;
+}
+
+.offset-lg-9 {
+    margin-left: 170% !important;
+    margin-top: 50px !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
