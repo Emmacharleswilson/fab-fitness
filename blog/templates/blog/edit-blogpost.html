@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Edit Blogpost | {% endblock %}
+
+{% block page_header %}
+
+<div class="overlay"></div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+            <h2 class="page-headline">Edit Blogpost</h2>
+            <hr />
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="POST" action="{% url 'edit_blogpost' blogpost.id %}" class="form mb-2"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn" href="{% url 'blog' %}">Cancel</a>
+                    <button class="btn" type="submit">Update Blog Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    $("#new-image").change(function () {
+        var file = $("#new-image")[0].files[0];
+        $("#filename").text(`Image will be set to: ${file.name}`);
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends "base.html"%}
+{% load static %}
+{% block title %} {{blogpost.blog_title}} |{% endblock %}
+
+{% block page_header %}
+
+<!--Blogpost Name-->
+<div class="overlay">
+    <div class="container header-container text-center">
+        <div class="row">
+            <div class="col">
+                <h2 class="blog-post-heading">{{ blogpost.blog_title }}</h2>
+                <p class="mb-0 text-muted pb-3"> By {{ blogpost.author }} on {{ blogpost.date_created }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Blogpost -->
+
+
+<div class="container text-center">
+    <div class="col-12 p-0">
+        <div>
+            {% if blogpost.image %}
+            <img class="img-fluid shadow blogdetail-img" src="{{ blogpost.image.url }}"
+                alt="{{ blogpost.blog_title }}" />
+            {% else %}
+            <img class="img-fluid shadow" src="{{ MEDIA_URL }}noimage.jpeg" alt="{{ blogpost.blog_title }}" />
+            {% endif %}
+        </div>
+        <div class="py-3">
+            {% if request.user == blogpost.author or request.user.is_superuser %}
+            <button type="button" class="btn" data-toggle="modal" data-target="#deleteBlogPost">
+                Delete Blogpost
+            </button>
+            <a class="btn" href="{% url 'edit_blogpost' blogpost.id %}">Edit Blog Post</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-12 p-0 pb-4">
+        <p class="mb-0 p-0">{{ blogpost.blog_body }}</p>
+    </div>
+</div>
+
+<!--Delete Blogpost Modal-->
+
+<div class="modal fade" id="deleteBlogPost" tabindex="-1" aria-labelledby="deleteBlogPost" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5> Delete Blogpost </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="font-weight-bold">
+                    Are you sure you want to delete this blogpost?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <a class="btn" href="{% url 'delete_blogpost' blogpost.id %}">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Comments Section-->
+
+<div class="container p-5 mb-5 shadow ">
+    <div class="row">
+        <div class="col-12 pb-3">
+            <h3 class="blog-title">Comments Section</h3>
+            {% if blogcomments.count > 0 %}
+            <p>{{ blogcomments.count }} comment</p>
+            <hr>
+            {% else %}
+            <p>There are no comments on this post yet! Be the first to comment below!</p>
+            {% endif %}
+            {% if not request.user.is_authenticated %}
+            <p>You need to be logged in to leave a comment! <a href="{% url 'account_login' %}">Login</a> or register an
+                account <a href="{% url 'account_signup' %}">here</a></p>
+            {% else %}
+            <a class="btn" href="{% url 'add_blogcomment' blogpost.id %}">Create New Comment</a>
+            {% endif %}
+        </div>
+
+
+
+        <div class="col-12 pt-4">
+            {% for blogcomment in blogcomments %}
+            <h5 class="blog-title">{{ blogcomment.comment_title }}</h5>
+            <small class="text-muted">By {{ blogcomment.comment_user }} on {{ blogcomment.date_created }}</small>
+            <p class="blog-comment">{{ blogcomment.comment }}</p>
+            {% if request.user == blogpost.author or request.user.is_superuser %}
+            <a class="btn mb-2" href="{% url 'delete_blogcomment' blogcomment.id %}"><i
+                    class="fas fa-trash-alt"></i></a>
+            <a class="btn mb-2" href="{% url 'edit_blogcomment' blogcomment.id %}"><i class="fas fa-pencil-alt"></i></a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% endblock %}

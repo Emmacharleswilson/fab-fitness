@@ -1,0 +1,58 @@
+{% extends "base.html"%}
+{% load static %}
+{% block title %} Blog | {% endblock %}
+
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col tect-center mt-3">
+            <h2 class="logo-font-heading">Blog</h2>
+            <hr />
+        </div>
+        <!--All blogposts-->
+        {% for blogpost in blogposts %}
+        <div class="col-md-12 col-6 pt-4 pb-4">
+            <div class="card">
+                {% if blogpost.image %}
+                <a href="{% url 'blog_detail' blogpost.id %}">
+                    <img class="img-fluid blogpost-img" src="{{ blogpost.image.url }}"
+                        alt="{{ blogpost.blog_title }}" />
+                </a>
+                {% else %}
+                <a href="{% url 'blog_detail' blogpost.id %}">
+                    <img class="img-fluid blogpost-img" src="{{ MEDIA_URL }}noimage.jpeg"
+                        alt="{{ blogpost.blog_title }}" />
+                </a>
+                {% endif %}
+                <div>
+                    <h3 class="m-0 pt-3 font-weight-bold blog-title">
+                        {{ blogpost.blog_title }}
+                    </h3>
+                    <hr />
+                    <small class="text-muted">By {{ blogpost.author }} on {{ blogpost.date_created }}
+                    </small>
+                    <p>{{blogpost.blog_body|slice:":200" }}...</p>
+                    <a href="{% url 'blog_detail' blogpost.id %}" class="btn">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
