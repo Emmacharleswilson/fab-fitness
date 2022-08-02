@@ -17,14 +17,14 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col tect-center mt-3">
+        <div class="col-12 text-center mt-3">
             <h2 class="logo-font-heading">Blog</h2>
-            <hr />
+            <hr>
         </div>
         <!--All blogposts-->
         {% for blogpost in blogposts %}
-        <div class="col-md-12 col-6 pt-4 pb-4">
-            <div class="card">
+        <div class="container text-center">
+            <div class="col-12 p-0">
                 {% if blogpost.image %}
                 <a href="{% url 'blog_detail' blogpost.id %}">
                     <img class="img-fluid blogpost-img" src="{{ blogpost.image.url }}"
