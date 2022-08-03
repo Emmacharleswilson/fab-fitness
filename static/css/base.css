@@ -249,14 +249,15 @@ header {
 }
 
 .social-link {
-    font-size: 200%;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-top: -20px;
+    font-size: 150%;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .copyright-text {
     color: #FD5075;
+    margin-bottom: 15px;
+    font-size: 80%;
 }
 
 footer {
