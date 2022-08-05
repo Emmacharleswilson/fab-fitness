@@ -1,0 +1,1 @@
+web: gunicorn fab_fitness.wsgi:application
