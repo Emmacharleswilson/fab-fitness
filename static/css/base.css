@@ -261,6 +261,7 @@ header {
 }
 
 footer {
+    margin-top: 100px;
     padding-top: 10px;
     height: 180px;
     background-color: #424242;
