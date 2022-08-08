@@ -123,6 +123,13 @@ SQLite was used during development and then Heroku Postgres in production.
 - The wishlist model allows users to save items for quicker access. These items can be removed.
 - This model also acts as a container for the WishListItem model. Just like the Order model, each wishlist is unique to each user but connecting to the user ID.
 
+**Blog**
+- The blog model allows admin users to upload and display blogs.
+- The blog can be edited or deleted. 
+
+**Blog Comments**
+- The blog comment model allows users that are logged in to leave a comment on a blog. 
+
 
 ---
 
@@ -143,15 +150,6 @@ Shopping Bag Page:
 Checkout Page:
 ![Checkout Page Wireframe](media/readme/checkout.png)
 
-
-[Account Page Wireframes](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/wireframes/account-page-wireframes.pdf)
-
-[Checkout Success Wireframes](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/wireframes/checkout-success-wireframes.pdf)
-
-[Register Wireframes](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/wireframes/register-page-wireframes.pdf)
-
-[Log In Wireframes](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/wireframes/login-page-wireframes.pdf)
-
 ---
 
 ## **The Surface Plane**
@@ -165,37 +163,28 @@ Checkout Page:
 - Users can navigate across the site freely.
 - Users shopping have the cost of the current shopping basket display on large screen sizes.
 
-![Project Navigation Bar](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/navbar.png "Image of the navigation bar")
 
-**Introduction**
-- Home page features an introduction to notify users to welcome them and explain the purpose of the site.
+**Home Page**
+- Home page features a main image with a shop now button that takes users to all the products.
+- Originally this page had a few images at the bottom before the shop now button however this feature had to be removed due to responsiveness issues. With more time I would have liked to improve the look of the landing page. 
 
-![Project Introduction](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/introduction.png "Image of the Introduction")
-
-**Store Page**
-- Store page offer products on large resolutions in a row of three. Images are large to attract the user's attention, and clicking the image will redirect the user to the product detail page.
-
-![Products](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/shop.png "Image of the products in the store")
 
 **Search Functionality**
 - Users can take advantage of the search function within the navigation bar to search for products or descriptions.
 - Search results are shown in a simple format with a link to redirect to the general store page.
 
-![Search Results](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/search.png "Image of the search results")
 
 **Reviews**
 - Users can choose to view the reviews left by users for a specific product.
 - Logged-in users can post a review, whereas users not logged in are shown a small message to log in to leave a product review.
 - User choosing the leave a review can choose to pick a title, give a star rating out of five, and write a review.
 
-![Reviews](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/reviews.png "Image of the reviews section")
 
 **Toasts**
 - Almost all actions provide feedback to the user via the bootstrap toasts written to provide user feedback.
 - Users shopping can view the current items within the bag and total cost.  The cost of delivery is visible and the user is told how much they need to spend to get free delivery?
 - At the bottom of the toast is a link to the checkout page.
 
-![Toasts](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/toasts.png "Image of the toasts.")
 
 **Shopping Bag**
 - The shopping bag page is fully responsive, showing users a picture of the item, name, price per unit, and total price.
@@ -204,18 +193,19 @@ Checkout Page:
 - At the bottom of the page user can find the cost of the bag, cost of delivery, the total and how much they must spend to be eligible for free delivery.
 
 
-![Shopping Bag Page](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/shopping-bag.png "Image of the the shopping bag page with 2 items")
-
 **Checkout Overlay**
 - Users who checkout will see a simple overlay with a spinning icon while the payment is processed.
 
-![Loading Overlay](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/overlay.png "Image of the the loading overlay")
+
+**WishList**
+- Logged-in users can add an item to their wishlist in the product details view. 
+- They can view their wishlish items on the wishlist page which alllows users to view the details of that specific product or remove it from their wishlist. 
+
 
 **Social Media Links**
 - Every page throughout the project has a footer with social media links. 
 - Clicking the social media like redirect the user to the social media page in a new tab, so as not to disrupt the user experience.
 
-![Social Media Icons](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/social.png "Image of the the social media icons in the footer")
 
 ---
 
