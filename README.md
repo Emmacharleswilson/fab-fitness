@@ -97,7 +97,7 @@ Google Fonts - Montserrat
 
 SQLite was used during development and then Heroku Postgres in production.
 
-[Database Diagram](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/schema/database.pdf)
+[Database Diagram](media/readme/database-diagram.png)
 
 #### **Key Models**
 
