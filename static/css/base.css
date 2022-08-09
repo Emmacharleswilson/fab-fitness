@@ -63,7 +63,8 @@ header {
     margin-top: 800px;
     background: black;
     width: 100%;
-    height: 420px !important;
+    height: 660px !important;
+    margin-bottom: -200px !important;
     position: absolute;
     overflow: scroll;
 }
@@ -74,6 +75,8 @@ header {
     padding-top: 10px;
     color: #fff8f8;
 }
+
+
 
 .hp-images {
     margin-top: 900px;
@@ -288,6 +291,7 @@ footer {
     background: black;
     color: white;
     min-width: 260px;
+    margin-top: 100px;
 }
 
 .btn-outline-black {
