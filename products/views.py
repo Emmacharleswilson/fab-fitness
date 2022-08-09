@@ -196,4 +196,3 @@ def edit_review(request, review_id):
         'edit': True,
     }
     return render(request, template, context)
-
