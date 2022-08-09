@@ -2,7 +2,6 @@
 
 [Live Site](https://fab-fitness.herokuapp.com/)
 
-![Responsive view of Nourish and Lift on all devices](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/images/project-image.png "Fab Fitness")
 
 ## **Introduction**
 Welcome to Fab Fitness.
@@ -272,9 +271,106 @@ Checkout Page:
 
 ## **Testing**
 
-Link to the Testing Document
-- [TESTING.md](https://github.com/Harry-Leepz/Nourish-and-Lift/blob/main/docs/TESTING.md)
+### **Manual Testing**
+
+**Navigation Bar** 
+- Navigation bar is fully responsive on large/medium/small resolutions.
+- At 900px, all navigation links are inline and not wrapping on another line.
+- All links are correctly redirecting to the correct pages. 
+- Hover CSS is correctly working, changing the color on the icon on hover.
+- Signing out, correctly shows the correct dropdown options, Log in and Register.
+- Signing in, correctly shows the correct dropdown options, My profile, and Logout.
+- Admins, have an additional option in the dropdown menu to the Product Management page.
+
+**Footer**
+- Links redirect to the correct social media page.
+- Links open in a new browser tab. 
+
+**Products**
+- On loading products correctly appear in SKU order.
+- Sorting functionality works, correctly sorting products by price descending or ascending.
+- Products can be sorted by price, rating or category. 
+- Confirm product names and prices against their fields in the database.
+- Products have the correct tag.
+- Tags are correctly redirecting and filtering products by category name.
+
+**Products Details**
+- Correct redirect to the correct product on clicking the product image.
+- Products details are correct and match the details in the database.
+- Product quantity buttons are correctly disabled when at 1 or 99.
+- Add to wishlist button correctly only shows up for logged-in users.
+- Leave a review button correctly only shows up for logged-in users. 
+- Users are prompted to login or sign up to leave a review. 
+- Links correctly work, redirecting back to the products page and adding the product to the shopping bag.
+
+
+**Reviews**
+- Product reviews show for the correct product, matching the database.
+- Product review form correctly not showing for users not logged in, shows for logged in users. 
+- Confirm only the user who created the review or superusers have the option to edit a review.
+- Editing a review, edits the review, redirects to the correct section of the page.
+
+
+**WishList**
+- Confirm users who are not logged in do not have the option to add a product to the wishlist.
+- Confirm users who are logged in do have the option to add an item to their WishList.
+- Confirm users who are not logged in are redirected to the login page when clicking the WishList link.
+- Products details links correctly redirects to the correct page when clicking the link on the WishList Page.
+- Removing an item from the WishList working correctly, correctly reflected within the database.
+
+**Admin**
+- Only admins have access to the Product Management page on the account dropdown.
+- Only admins can see the Edit/Delete buttons on the product details page.
+- Only admin users can upload a blog post. 
+- Product Management links correctly redirect to the add product page.
+- Adding a product working correctly, the product has the correct information from the form. Correctly shows within the database.
+- Editing the product, working fully, reviews are maintained for the products after editing. Details correctly reflected.
+- Delete button correctly shows a modal to confirm the delete.
+- Deleting a product correctly removed the product from the database, and any reviews for the products are also deleted.
+
+**Shopping Bag**
+- Shopping bag link in the navbar shows the correct value of the current bag session.
+- Correct products are shown in the shopping bag.
+- Adding items to the bag, and logging in after correctly retains the current bag.
+- Correct totals are shown.
+- Free delivery threshold correctly updates, shows correct values.
+
+**Checkout**
+- Correct items are carried over from the shopping bag to the checkout page.
+- Form correctly responds to invalid inputs.
+- Redirects to the checkout success page correctly.
+- Stripe correctly showing 200 status webhooks for orders.
+
+**Search Bar**
+- Showing correct search for words searched.
+- Adding a new product and search by its name correctly shows the product.
+- User feedback is accurate.
+
+
+**Firefox Inspector**
+
+Firefox Inspector was used throughout the development of the project to test responsiveness.
+Responsiveness was tested using Dev Tools to emulate the following devices,
+- Iphone 5
+- Iphone 6/7/8
+- Iphone 6/7/8 Plus
+- Iphone X
+- Ipad
+- Ipad Pro
+
+**Browser Testing**
+
+During development, the testing was mainly done solely using Firefox.
+
+In production the site has been tested on the following browsers,
+- Google Chrome
+- Firefox
+- Microsoft Edge
+- Safari
+
 ---
+
+### **Validation**
 
 ## **Deployment**
 
@@ -307,7 +403,7 @@ Use the following commands to commit your work,
 2. In the *Clone >> HTTPS* section, copy the clone URL for the repository
 3. In your local IDE open Git Bash
 4. Change the current working directory to the location where you want the cloned directory to be made
-5. Type `git clone`, and then paste the URL you copied in Step 2 - ``git clone https://github.com/Harry-Leepz/Nourish-and-Lift.git``
+5. Type `git clone`, and then paste the URL you copied in Step 2 - ``git clone https://github.com/Emmacharleswilson/fab-fitness.git``
 6. Set the following values in a `env.py` file.
 ```
 import os
@@ -458,15 +554,23 @@ pip3 freeze > requirements.txt
 ## **Credits**
 
 **Product Images / Names / Descriptions**
-- All the content relating to the products all came from the Argos website. Although the images were altered the original images were screen shots taken from items from there.
-- [Argos](https://www.argos.co.uk/list/shop-all-opti-weights?tag=ar:shop:opti:weights-dumbbells-lb)
+- All the content relating to the products all came from the Bo+Tee and Gio websitea. 
+- [Bo+Tee](https://boandtee.com/)
     - This project is made solely for educational purposes. There is no financial gain from the project. 
+- [Gio](https://goi.com/en-gb)
 
 **Code**
 - A large amount of code came from the Code Institute, Boutique Ado Project.
-- [Code Institute, Boutique Ado](https://harry-boutique-ado.herokuapp.com/)
+- [Code Institute, Boutique Ado](https://github.com/Emmacharleswilson/boutique-ado)
     - Boutique Ado is a walkthrough project by Code Institute, this project gave students an introduction to Django/AWS S3/Stripe/Heroku Postgres
     - The core functionality of Nourish and Lift is all taken from the Boutique Ado project.
+
+- [Harry-Leepz, Nourish and Lift](https://github.com/Harry-Leepz/Nourish-and-Lift)
+    - Used this code as a guide when creating the wishlist and reviews models. 
+
+- [Alice Pinch, Bake my Day](https://github.com/Alicepinch/bakemyday)
+    - Used this code as a guide when creating the blog and blog comments models.
+
 
 **Bootstrap**
 - The Bootstrap Library was used through the project. The project used version 4.6.
@@ -479,28 +583,4 @@ pip3 freeze > requirements.txt
 
 ## **Aknowledgements**
 
-**Chris Zielinski**
-- [LinkedIn](https://www.linkedin.com/in/ckz8780/)
-    - The creator of the Boutique Ado project, helped create the models and views for the wishlist app.
-    - He has been a huge help and support throughout this project, not only to me but to countless other students. Takes time out of his day to help and respond to messages and has always been extremely courteous and respectful.
-
-**Benjamin Kavanagh**
-- [Github](https://github.com/BAK2K3) | [LinkedIn](https://www.linkedin.com/in/benjaminkavanagh/)
-    - Benjamin played a large role in testing the initial deployed version of this project offering fixes and solutions.
-    - He has always taken time to offer advice and guidance.
-
-**Aaron Sinnott**
-- My mentor from the first time I started my course at Code Institute. 
-- Has always offered incredible advice and support, providing valuable feedback, and offered solutions to several Pep8 errors.
-
-**Jane Rinn**
-- [Github](https://github.com/janeyrinn) | [LinkedIn](https://www.linkedin.com/in/jane-rinn/)
-    - A fellow student at Code Institute, but in reality so much more. A friend who has been there for me every time I struggled.
-    - Tested the project, offering a massive amount of feedback.
-
-**Sonia Akhtar Hussain**
-- [Github](https://github.com/CodeSonia) | [LinkedIn](https://www.linkedin.com/in/sonia-akhtar-hussain/)
-    - Sonia re-did the backgrounds for all of my product images and to anyone who views this project, She deserves all the credit for the incredible product images. 
-    - Sonia has been a huge pillar of support for me throughout this project, and the project would not have been completed without her.
-
-Finally thank you for viewing this project. I hope whoever you are, that you are in good health and doing well. God Bless!
+I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the course of the project and my peers Daisy Gunn and Harry Dhillon for their support & feedback.
