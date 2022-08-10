@@ -272,8 +272,13 @@ header {
 footer {
     margin-top: 100px;
     padding-top: 10px;
-    height: 180px;
+    height: 450px;
     background-color: #424242;
+}
+
+#mc_embed_signup {
+    width: 100% !important;
+    margin-bottom: 20px;
 }
 
 /* from Bulma */
