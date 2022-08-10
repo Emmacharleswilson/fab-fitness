@@ -213,6 +213,13 @@ Checkout Page:
 
 ---
 
+## **Search Engine Optimization**
+
+Keywords:
+![Keywords](media/readme/keywords.png)
+
+- These keywords have been implimented on the home page under "Discover the new Collections" subheading with a shop now button below. 
+
 ## **Technologies Used**
 
 - [Python](https://www.python.org/) 

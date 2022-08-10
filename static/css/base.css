@@ -83,6 +83,12 @@ header {
     height: 30%;
 }
 
+.hp-text {
+    margin-top: -100px !important;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 .girls {
     height: 100% !important;
 }
@@ -703,5 +709,14 @@ a.text-info:hover {
     .img-fluid-page {
         height: 100%;
         width: 100%;
+    }
+
+    .shop-now-button {
+        margin-top: 180px !important;
+    }
+
+    .hp-text {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
     }
 }
