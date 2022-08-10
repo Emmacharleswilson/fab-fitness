@@ -220,6 +220,30 @@ Keywords:
 
 - These keywords have been implimented on the home page under "Discover the new Collections" subheading with a shop now button below. 
 
+---
+
+## **Marketing Types**
+
+### Organic and paid social media marketing 
+
+Instagram:
+- The use of paid and gifted collabortions to fitness influences would be a good way to initially attracked and gain customers. 
+- The use of instagram adverts and paid promotional advertising could also be benefitial especially if sales or discounts were ran. 
+
+Facebook:
+- Again the use of paid advertising would be good here. However I would put more emphasis on the Instgram advertising as I feel the target audience for this website favours Instagram. 
+
+### Email Marketing 
+
+- The use of email marketing could be benefitial as the store can target old and potential customers. 
+
+### Facebook Page Mockup 
+
+![Facebook Page](media/readme/facebook-page.png)
+![About Section](media/readme/facebook-info.png)
+
+---
+
 ## **Technologies Used**
 
 - [Python](https://www.python.org/) 
