@@ -10,7 +10,7 @@ Fab Fitness is my fifth and final project, part of the Code Institute, Full Stac
 
 The purpose of this project was a build a full-stack site based around a business logic used to control a centrally-owned dataset. The technologies used for this project are HTML, CSS, JavaScript, Python, and Django. Stripe handles online test payments and Heroku Postgres as a relational database.
 
-Nourish and Lift is a fictional brand, purchases on this project are accepted via Stripes test card details. For further information on which card number you should use, please refer to Stripe's official documentation.
+Fab Fitness is a fictional brand, purchases on this project are accepted via Stripes test card details. For further information on which card number you should use, please refer to Stripe's official documentation.
 
 [Stripe Test Integration](https://stripe.com/docs/testing)
 
@@ -19,10 +19,6 @@ This project is for educational purposes only, No commercial revenue is generate
 ---
 
 ## **UXD - User Experience Design**
-
-A large part of the inspiration behind the planning for this project came from Jason James Garretts’s, “The Elements of User-Experience”. 
-
-By keeping the user in mind throughout the design and development of the project, it would be easier to make the user experience a positive one. 
 
 The planning of the project is broken into 5 planes,
 
@@ -231,7 +227,7 @@ Instagram:
 - The use of instagram adverts and paid promotional advertising could also be benefitial especially if sales or discounts were ran. 
 
 Facebook:
-- Again the use of paid advertising would be good here. However I would put more emphasis on the Instgram advertising as I feel the target audience for this website favours Instagram. 
+- Again the use of paid advertising would be good here. However more emphasis would be put on the Instgram advertising as this is very popular within the target audience. 
 
 ### Email Marketing 
 
@@ -321,6 +317,7 @@ Facebook:
 **Footer**
 - Links redirect to the correct social media page.
 - Links open in a new browser tab. 
+- Users can subscribe to the newsletter by entering their email in the marketing form.
 
 **Products**
 - On loading products correctly appear in SKU order.
@@ -433,8 +430,7 @@ The python extention was used to test Python for Pep8 compliance withit's built 
 - ./checkout/app.py - 'checkout.signals' imported but unused
     - The import is used to let Django know there a signals module, listening for changes to automatically updating the totals
 - Errors relating to lines being to long.
-    - Most errors were fixed thanks to Aaron Sinnot's aid.
-    - Lines 74 and 75 in webhook_handler.py cannot be shortened without breaking the code.
+    - Lines in webhook_handler.py cannot be shortened without breaking the code.
 
 ![Flake 8 Python code errors](media/readme/flake8.png "Python code errors")
 
