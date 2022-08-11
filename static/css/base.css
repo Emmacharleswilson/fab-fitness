@@ -717,11 +717,26 @@ a.text-info:hover {
     }
 
     .shop-now-button {
-        margin-top: 180px !important;
+        margin-top: 420px !important;
     }
 
     .hp-text {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
         margin-left: 5px !important;
         margin-right: 5px !important;
+    }
+
+    body {
+        background: url('/media/mobile-hero.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #banner {
+        height: 910px !important;
+    }
+
+    .banner-text {
+        margin-bottom: -600px !important;
     }
 }

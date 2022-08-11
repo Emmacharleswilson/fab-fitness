@@ -8,7 +8,7 @@ Welcome to Fab Fitness.
 
 Fab Fitness is my fifth and final project, part of the Code Institute, Full Stack Web Developer Course.
 
-The purpose of this project was a build a full-stack site based around a business logic used to control a centrally-owned dataset. The technologies used for this project are HTML, CSS, JavaScript, Python, and Django. Stripe handles online test payments and Heroku Postgres as a relational database.
+The purpose of this project was a build a full-stack site based on a business logic used to control a centrally-owned dataset. The technologies used for this project are HTML, CSS, JavaScript, Python, and Django. Stripe handles online test payments and Heroku Postgres as a relational database.
 
 Fab Fitness is a fictional brand, purchases on this project are accepted via Stripes test card details. For further information on which card number you should use, please refer to Stripe's official documentation.
 
@@ -35,7 +35,7 @@ The planning of the project is broken into 5 planes,
 - As a creator, I want the site to be easy to navigate.
 - As a creator, I want to allow users to filter through products.
 - As a creator, I want to provide users with updates to any actions.
-- As a creator, I want to allows admins to Add/Edit/Delete products to/from the store.
+- As a creator, I want to allow admins to Add/Edit/Delete products to/from the store.
 
 ### **User Stories**
 
@@ -48,8 +48,8 @@ The planning of the project is broken into 5 planes,
 - As a shopper, I want to be to view all products, so that I can decide what I want to buy.
 - As a shopper, I want to be able to view products in more detail.
 - As a shopper, I want to be able to view reviews left by other customers for products, so that I can understand whether the product is worth purchasing. 
-- As a shopper, I want to be able to see a confirmation when a product is added to my shopping bag, so that I can avoid accidentally adding multiple quantities of the same item. 
-- As a shopper, I want to be able to view my bag, so that I can see what is in my bag and adjust quantities
+- As a shopper, I want to be able to see a confirmation when a product is added to my shopping bag so that I can avoid accidentally adding multiple quantities of the same item. 
+- As a shopper, I want to be able to view my bag, so that I can see what is in my bag and adjust the quantities
 
 #### **Customers (Logged in) Stories**
 - As a logged-in user, I want to be able to save my details, so that I can avoid retyping my details again.
@@ -63,7 +63,7 @@ The planning of the project is broken into 5 planes,
 ---
 
 ## Scope
-In order to achieve the desired user & business goals, the following features will be included in this release:
+To achieve the desired user & business goals, the following features will be included in this release:
 
 - Responsive navbar that will navigate to the various pages throughout the site
 - Landing page with shop now button
@@ -71,7 +71,7 @@ In order to achieve the desired user & business goals, the following features wi
 - Product details page which will have size and quantity selectors, add to bag functionality and keep shopping button
 - Wishlist button and page
 - Leave review option
-- Blog post's and blog comments
+- Blog posts and blog comments
 - Register/login feature using Django allauth
 - Account page where users can update their details
 - Checkout page and confirmation
@@ -80,9 +80,9 @@ In order to achieve the desired user & business goals, the following features wi
 ## **The Structure Plane**
 
 #### **Colors**
-![Color pallete used throughout the project](media/readme/colour-scheme.png "Colour Scheme")
+![Color pallet used throughout the project](media/readme/colour-scheme.png "Colour Scheme")
 
-I chose these colours as I felt that they appealed to the target audience of my website which would be young adult women. I think the bright pink helps certian features pop while the grey, black and off-white compliment the colourful aspects. 
+I chose these colours as I felt that they appealed to the target audience of my website which would be young adult women. I think the bright pink helps certain features pop while the grey, black and off-white compliment the colourful aspects. 
 
 #### **Fonts**
 
@@ -103,8 +103,8 @@ SQLite was used during development and then Heroku Postgres in production.
 - The default fields are saved fields by the user to speed up the checkout process by pre-populating shipping details.
 
 **Order**
-- The order model is connected to the User Profile, allows the user to view their previous orders.
-- The order model acts as a container for the order line items. Although is the item is stored within the OrderLineItem model, having them connected allows to retrieve the item purchased.
+- The order model is connected to the User Profile and allows the user to view their previous orders.
+- The order model acts as a container for the order line items. Although the item is stored within the OrderLineItem model, having them connected allows retrieving the item purchased.
 
 **Product**
 - The product model holds key information for each product. Each product has a unique ID.
@@ -117,7 +117,7 @@ SQLite was used during development and then Heroku Postgres in production.
 
 **WishList**
 - The wishlist model allows users to save items for quicker access. These items can be removed.
-- This model also acts as a container for the WishListItem model. Just like the Order model, each wishlist is unique to each user but connecting to the user ID.
+- This model also acts as a container for the WishListItem model. Just like the Order model, each wishlist is unique to each user but connects to the user ID.
 
 **Blog**
 - The blog model allows admin users to upload and display blogs.
@@ -161,7 +161,7 @@ Checkout Page:
 
 
 **Home Page**
-- Home page features a main image with a shop now button that takes users to all the products.
+- Home page features the main image with a shop now button that takes users to all the products.
 - Originally this page had a few images at the bottom before the shop now button however this feature had to be removed due to responsiveness issues. With more time I would have liked to improve the look of the landing page. 
 
 
@@ -173,7 +173,7 @@ Checkout Page:
 **Reviews**
 - Users can choose to view the reviews left by users for a specific product.
 - Logged-in users can post a review, whereas users not logged in are shown a small message to log in to leave a product review.
-- User choosing the leave a review can choose to pick a title, give a star rating out of five, and write a review.
+- Users choosing to leave a review can choose to pick a title, give a star rating out of five, and write a review.
 
 **Blog**
 - Admin users can upload blog posts.
@@ -182,13 +182,13 @@ Checkout Page:
 
 **Toasts**
 - Almost all actions provide feedback to the user via the bootstrap toasts written to provide user feedback.
-- Users shopping can view the current items within the bag and total cost.  The cost of delivery is visible and the user is told how much they need to spend to get free delivery?
+- Users shopping can view the current items within the bag and total cost.  The cost of delivery is visible and the user is told how much they need to spend to get free delivery.
 - At the bottom of the toast is a link to the checkout page.
 
 
 **Shopping Bag**
 - The shopping bag page is fully responsive, showing users a picture of the item, name, price per unit, and total price.
-- Users can also choose to increase/decrease the number of items in their bag, click the update button to have the prices update.
+- Users can also choose to increase/decrease the number of items in their bag, and click the update button to have the prices updated.
 - user can click the remove link and have all the items within the bag removed, regardless of quantity.
 - At the bottom of the page user can find the cost of the bag, cost of delivery, the total and how much they must spend to be eligible for free delivery.
 
@@ -199,7 +199,7 @@ Checkout Page:
 
 **WishList**
 - Logged-in users can add an item to their wishlist in the product details view. 
-- They can view their wishlish items on the wishlist page which alllows users to view the details of that specific product or remove it from their wishlist. 
+- They can view their wishlist items on the wishlist page which allows users to view the details of that specific product or remove it from their wishlist. 
 
 
 **Social Media Links**
@@ -214,7 +214,7 @@ Checkout Page:
 Keywords:
 ![Keywords](media/readme/keywords.png)
 
-- These keywords have been implimented on the home page under "Discover the new Collections" subheading with a shop now button below. 
+- These keywords have been implemented on the home page under the "Discover the new Collections" subheading with a shop now button below. 
 
 ---
 
@@ -223,15 +223,15 @@ Keywords:
 ### Organic and paid social media marketing 
 
 Instagram:
-- The use of paid and gifted collabortions to fitness influences would be a good way to initially attracked and gain customers. 
-- The use of instagram adverts and paid promotional advertising could also be benefitial especially if sales or discounts were ran. 
+- The use of paid and gifted collaborations with fitness influences would be a good way to initially attract and gain customers. 
+- The use of Instagram adverts and paid promotional advertising could also be beneficial especially if sales or discounts were run. 
 
 Facebook:
-- Again the use of paid advertising would be good here. However more emphasis would be put on the Instgram advertising as this is very popular within the target audience. 
+- Again the use of paid advertising would be good here. However, more emphasis would be put on Instagram advertising as this is very popular with the target audience. 
 
 ### Email Marketing 
 
-- The use of email marketing could be benefitial as the store can target old and potential customers. 
+- The use of email marketing could be beneficial as the store can target old and potential customers. 
 
 ### Facebook Page Mockup 
 
@@ -309,7 +309,7 @@ Facebook:
 - Navigation bar is fully responsive on large/medium/small resolutions.
 - At 900px, all navigation links are inline and not wrapping on another line.
 - All links are correctly redirecting to the correct pages. 
-- Hover CSS is correctly working, changing the color on the icon on hover.
+- Hover CSS is correctly working, changing the colour on the icon on hover.
 - Signing out, correctly shows the correct dropdown options, Log in and Register.
 - Signing in, correctly shows the correct dropdown options, My profile, and Logout.
 - Admins, have an additional option in the dropdown menu to the Product Management page.
@@ -333,12 +333,12 @@ Facebook:
 - Product quantity buttons are correctly disabled when at 1 or 99.
 - Add to wishlist button correctly only shows up for logged-in users.
 - Leave a review button correctly only shows up for logged-in users. 
-- Users are prompted to login or sign up to leave a review. 
+- Users are prompted to log in or sign up to leave a review. 
 - Links correctly work, redirecting back to the products page and adding the product to the shopping bag.
 
 
 **Reviews**
-- Product reviews show for the correct product, matching the database.
+- Product reviews show the correct product, matching the database.
 - Product review form correctly not showing for users not logged in, shows for logged in users. 
 - Confirm only the user who created the review or superusers have the option to edit a review.
 - Editing a review, edits the review, redirects to the correct section of the page.
@@ -348,7 +348,7 @@ Facebook:
 - Confirm users who are not logged in do not have the option to add a product to the wishlist.
 - Confirm users who are logged in do have the option to add an item to their WishList.
 - Confirm users who are not logged in are redirected to the login page when clicking the WishList link.
-- Products details links correctly redirects to the correct page when clicking the link on the WishList Page.
+- Products details links correctly redirect to the correct page when clicking the link on the WishList Page.
 - Removing an item from the WishList working correctly, correctly reflected within the database.
 
 **Admin**
@@ -364,9 +364,9 @@ Facebook:
 **Shopping Bag**
 - Shopping bag link in the navbar shows the correct value of the current bag session.
 - Correct products are shown in the shopping bag.
-- Adding items to the bag, and logging in after correctly retains the current bag.
+- Adding items to the bag, and logging in after correctly retaining the current bag.
 - Correct totals are shown.
-- Free delivery threshold correctly updates, shows correct values.
+- Free delivery threshold correctly updates and shows correct values.
 
 **Checkout**
 - Correct items are carried over from the shopping bag to the checkout page.
@@ -376,7 +376,7 @@ Facebook:
 
 **Search Bar**
 - Showing correct search for words searched.
-- Adding a new product and search by its name correctly shows the product.
+- Adding a new product and searching by its name correctly shows the product.
 - User feedback is accurate.
 
 
@@ -384,10 +384,10 @@ Facebook:
 
 Firefox Inspector was used throughout the development of the project to test responsiveness.
 Responsiveness was tested using Dev Tools to emulate the following devices,
-- Iphone 5
-- Iphone 6/7/8
-- Iphone 6/7/8 Plus
-- Iphone X
+- iPhone 5
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
 - Ipad
 - Ipad Pro
 
@@ -395,7 +395,7 @@ Responsiveness was tested using Dev Tools to emulate the following devices,
 
 During development, the testing was mainly done solely using Firefox.
 
-In production the site has been tested on the following browsers,
+In production, the site has been tested on the following browsers,
 - Google Chrome
 - Firefox
 - Microsoft Edge
@@ -412,15 +412,15 @@ In production the site has been tested on the following browsers,
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - 0 Errors
 - 702 Warnings
-    - These warnings are in relation to a unknown vendor extentions that are added by CSS Autoprefixer for cross browser support.
+    - These warnings are in relation to an unknown vendor extension that is added by CSS Autoprefixer for cross-browser support.
 
 [JSHint JavaScript Validator](https://jshint.com/)
 - 0 Errors
 
 
-The python extention was used to test Python for Pep8 compliance withit's built in linting too.
-- Alot of the Python errors were fixed during development.
-- Any errors that related to files that were auto generated by Django were left untouched.
+The python extension was used to test Python for Pep8 compliance with its built-in linting too.
+- A lot of the Python errors were fixed during development.
+- Any errors that related to files that were auto-generated by Django were left untouched.
     - Migration files.
     - Project setting.py
     - ./manage.py
@@ -428,17 +428,24 @@ The python extention was used to test Python for Pep8 compliance withit's built 
 - The errors relating to the variable 'e' not being used,
     - 'e' as a variable here is used to capture any errors from the Stripe webhook handler.
 - ./checkout/app.py - 'checkout.signals' imported but unused
-    - The import is used to let Django know there a signals module, listening for changes to automatically updating the totals
-- Errors relating to lines being to long.
+    - The import is used to let Django know there is a signals module, listening for changes to automatically update the totals
+- Errors relating to lines being too long.
     - Lines in webhook_handler.py cannot be shortened without breaking the code.
 
 ![Flake 8 Python code errors](media/readme/flake8.png "Python code errors")
+
+---
+
+## **Bugs and Fixes**
+
+**Quantity selector in the bag view** 
+
 
 ## **Deployment**
 
 The master branch of this repository is the most current version and has been used for the deployed version of the site.
 
-The Code Institiue student template was used to create this project.
+The Code Institute student template was used to create this project.
 
 [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
@@ -446,11 +453,11 @@ The Code Institiue student template was used to create this project.
 - Give your repository a name, and description if you wish.
 - Click the *Create Repository from Template* to create your repository. 
 - Click the *Gitpod* button to create a gitpod workspace, this can take a few minutes.
-- When working on project using Gitpod, please open the workspace from Gitpod, this will open your previous workspace rather than creating a new one.
+- When working on a project using Gitpod, please open the workspace from Gitpod, this will open your previous workspace rather than creating a new one.
 Use the following commands to commit your work, 
 - `git add . ` - adds all modified files to a staging area.
-- `git commit -m "A short message exlaining your commit"` - commits all changes to a local repository.
-- `git push` - pushes all your commited changes to your Github repository.
+- `git commit -m "A short message explaining your commit"` - commits all changes to a local repository.
+- `git push` - pushes all your committed changes to your Github repository.
 
 **Requirements**
 
@@ -477,7 +484,7 @@ os.environ.setdefault('STRIPE_SECRET_KEY', '<key generated by Stripe>')
 os.environ.setdefault('STRIPE_WH_SECRET', '<key generated by Stripe>')
 ```
 
-- Stripe keys are generated by Stripe, each individual have their own unique key values.
+- Stripe keys are generated by Stripe, each individual has their own unique key values.
 - *PLEASE MAKE SURE NEVER TO PUBLISH THESE KEYS, ADD THE `env.py` TO A `.gitignore` TO AVOID PUSHING KEYS TO GITHUB.*
 7. Install the project requirements - `pip3 install requirements.txt`
 8. Apply database migrations - `python manage.py migrate`
@@ -488,7 +495,7 @@ os.environ.setdefault('STRIPE_WH_SECRET', '<key generated by Stripe>')
 
 1. Log into Heroku
 2. Create a new app, choose a location closest to you
-3. Search for Heroku Postgres from the resources tab and add to your project
+3. Search for Heroku Postgres from the resources tab and add it to your project
 4. Make sure to have `dj_database_url` and `psycopg2` installed.
 ```
 pip3 install dj_database_url
@@ -504,19 +511,19 @@ pip3 install psycopg2
 web: gunicorn moose_juice.wsgi:application
 ```
 11. Disable Heroku from collecting static files - `heroku config:set DISABLE_COLLECTSTATIC=1 --app <your-app-name>`
-12. Add the hostname to project settings.py file
+12. Add the hostname to the project settings.py file
 ```
 ALLOWED_HOSTS = ['<you-app-name>.herokuapp.com', 'localhost']
 
 ```
-13. Connect Heroku to you Github, by selecting Github as the deployment method and search for the github repository and pressing `connect`
+13. Connect Heroku to your Github, by selecting Github as the deployment method and searching for the Github repository and pressing `connect`
 14. In Heroku, within settings, under config vars select `Reveal config vars`
 15. Add the following, 
 ```
-AWS_ACCESS_KEY_ID =	<your variable here>
-AWS_SECRET_ACCESS_KEY =	<your variable here>
-DATABASE_URL =	<added by Heroku when Postgres installed>
-DISABLE_COLLECTSTATIC =	1 
+AWS_ACCESS_KEY_ID = <your variable here>
+AWS_SECRET_ACCESS_KEY = <your variable here>
+DATABASE_URL =  <added by Heroku when Postgres installed>
+DISABLE_COLLECTSTATIC = 1 
 EMAIL_HOST_PASS = <your variable here>
 EMAIL_HOST_USER = <your variable here>
 SECRET_KEY = <your variable here>
@@ -583,7 +590,7 @@ git push
     - Under JSON tab, click Import managed policy
     - Choose AmazongS3FullAccess
     - Edit the resource to include the Bucket ARN noted earlier when creating the Bucket Policy
-    - Click next step and go to Review policy
+    - Click the next step and go to Review policy
     - Give the policy a name and description of your choice
     - Create policy
 3. Go back to User Groups and choose the group created earlier
@@ -616,7 +623,7 @@ pip3 freeze > requirements.txt
 ## **Credits**
 
 **Product Images / Names / Descriptions**
-- All the content relating to the products all came from the Bo+Tee and Gio websitea. 
+- All the content relating to the products all came from the Bo+Tee and Gio websites. 
 - [Bo+Tee](https://boandtee.com/)
     - This project is made solely for educational purposes. There is no financial gain from the project. 
 - [Gio](https://goi.com/en-gb)
@@ -628,21 +635,21 @@ pip3 freeze > requirements.txt
     - The core functionality of Nourish and Lift is all taken from the Boutique Ado project.
 
 - [Harry-Leepz, Nourish and Lift](https://github.com/Harry-Leepz/Nourish-and-Lift)
-    - Used this code as a guide when creating the wishlist and reviews models. 
+    - Used this code as a guide when creating the wishlist and review models. 
 
 - [Alice Pinch, Bake my Day](https://github.com/Alicepinch/bakemyday)
     - Used this code as a guide when creating the blog and blog comments models.
 
 
 **Bootstrap**
-- The Bootstrap Library was used through the project. The project used version 4.6.
+- The Bootstrap Library was used throughout the project. The project used version 4.6.
 - [Bootstrap](https://getbootstrap.com/docs/4.6/components/alerts/)
     - Toasts/Navigation Bar/Forms/Dropdown Menu/Buttons, the core elements mentioned are all found in the Bootstrap components section and built upon.
 
 **Django Documentation**
-- Django have amazing documentation with a tutorial project and in depth explanations on core components.
+- Django have amazing documentation with a tutorial project and in-depth explanations of core components.
 - [Django Documentation ](https://docs.djangoproject.com/en/3.2/)
 
 ## **Aknowledgements**
 
-I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the course of the project and my peer Harry Dhillon for their support & feedback.
+I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the project and my peer Harry Dhillon for their support & feedback.
