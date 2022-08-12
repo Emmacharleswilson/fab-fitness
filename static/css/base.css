@@ -620,11 +620,15 @@ a.text-info:hover {
 }
 
 .blogdetail-img {
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 .header-container {
     padding-top: 220px !important;
+}
+
+.blog-post-heading {
+    position: relative;
 }
 
 /* -------------------------------- Media Queries */
@@ -738,5 +742,9 @@ a.text-info:hover {
 
     .banner-text {
         margin-bottom: -600px !important;
+    }
+
+    .blog-post-heading {
+        margin-bottom: 30px !important;
     }
 }

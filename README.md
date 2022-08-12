@@ -220,6 +220,8 @@ Keywords:
 
 ## **Marketing Types**
 
+- As this website is B2C orientated the following types of marketing would be benefital. The target audience would be women aged 16 - 50 years old and interested in fitness, using social media platforms would be a good way of targeting this demographic. 
+
 ### Organic and paid social media marketing 
 
 Instagram:
@@ -639,6 +641,10 @@ pip3 freeze > requirements.txt
 
 - [Alice Pinch, Bake my Day](https://github.com/Alicepinch/bakemyday)
     - Used this code as a guide when creating the blog and blog comments models.
+
+**Blog**
+- [Blog Post's](https://www.puregym.com/blog/)
+    - Both blog post's were sourced from pure gym's website.
 
 
 **Bootstrap**
