@@ -440,8 +440,15 @@ The python extension was used to test Python for Pep8 compliance with its built-
 
 ## **Bugs and Fixes**
 
-**Quantity selector in the bag view** 
+**Home Page layout in Chrome** 
+- On Chrome browsers the styling of the home page footer, banner and shop now button has some styling issues. 
+- This is an ongoing issue that I hope to fix in the future. 
 
+**Add to wishlist button still appears even if user has added that product to their wishlist**
+- This issue is ongoing and could be solved by added the correct functionality.
+- Again this is something I hope to resolve in the future. 
+
+---
 
 ## **Deployment**
 
